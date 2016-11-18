@@ -1,0 +1,7 @@
+{
+  "auth0-token-info-endpoint": "https://larry.auth0.com/tokeninfo",
+  "auth0-user-info-endpoint": "https://larry.auth0.com/userinfo",
+  "auth0-jwks-uri-endpoint": "https://larry.auth0.com/.well-known/jwks.json",
+  "auth0-jwt-aud": "https://zek3a57ifi.execute-api.us-east-1.amazonaws.com/prod/client",
+  "auth0-jwt-issuer": "https://larry.auth0.com/"
+}

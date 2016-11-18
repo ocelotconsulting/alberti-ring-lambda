@@ -1,0 +1,36 @@
+{
+  "name": "alberti-ring-lambda",
+  "version": "0.0.1",
+  "description": "An access mechanism (custom authorizer) to secrets backed by alberti, exposed via AWS API Gateway.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocelotconsulting/alberti-ring.git"
+  },
+  "scripts": {
+    "clean": "rm dist*.zip || true && rm -rf build",
+    "dist": "mkdir build && npm install && npm prune --production && mv node_modules ./build && npm install && node zip.js",
+    "test": "node -e \"function noop(){}\""
+  },
+  "keywords": [
+    "nodejs",
+    "aws"
+  ],
+  "author": "Larry Anderson",
+  "license": "MIT",
+  "dependencies": {
+    "alberti-ring": "0.0.4",
+    "es6-promisify": "^5.0.0",
+    "jsonwebtoken": "^7.1.9",
+    "jwks-rsa": "^1.1.1",
+    "superagent": "^2.3.0",
+    "superagent-promise": "^1.1.0"
+  },
+  "devDependencies": {
+    "archiver": "*",
+    "eslint": "^3.8.0",
+    "eslint-config": "^0.3.0",
+    "eslint-config-standard": "^6.2.0",
+    "eslint-plugin-promise": "^3.0.0",
+    "eslint-plugin-standard": "^2.0.1"
+  }
+}
