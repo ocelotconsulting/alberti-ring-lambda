@@ -9,7 +9,7 @@ Follow these steps to get started:
 
 1. Git-clone this repository.
 
-        $ git clone git@github.com:ocelotconsulting/alberti-ring.git
+        $ git clone git@github.com:ocelotconsulting/alberti-ring-lambda.git
 
 2. Package lambda zip:
 
